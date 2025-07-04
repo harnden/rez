@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive Image</title>
+    <style>
+        /* Optional: Basic styling for the image within the iframe */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure the content fills the iframe height */
+            background-color: #f0f0f0; /* Light background for visibility */
+        }
+        img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; /* Make image fill the width of the embedded page */
+            max-width: 100%; /* Ensure it doesn't overflow */   
+            height: auto;
+            border: 2px solid #ccc; /* Optional: Add a border for better visibility */
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://drive.google.com/uc?id=1BDT5HuvE46dmGAcFuMuVpMeNv-3trOq7" alt="Joshua Tree" usemap="#myImageMap">
+
+    <map name="myImageMap">
+        <area shape="rect" coords="0,0,100,50" href="https://sites.google.com/view/storyproducer/rez/" alt="Clickable Area 1 (Top-Left)">
+        </map>
+
+</body>
+</html>
