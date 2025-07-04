@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Interactive Image</title>
     <style>
-        /* Optional: Basic styling for the image within the iframe */
         body {
             margin: 0;
+            /* Make body a flex container to center its child (the image) */
             display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; /* Ensure the content fills the iframe height */
+            flex-direction: column; /* Stack items vertically if there were more */
+            justify-content: flex-start; /* Align content to the top initially */
+            align-items: center; /* Center horizontally */
+            min-height: 100vh; /* Ensure body takes at least the full viewport height */
             background-color: #f0f0f0; /* Light background for visibility */
         }
         img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%; /* Make image fill the width of the embedded page */
-            max-width: 100%; /* Ensure it doesn't overflow */   
-            height: auto;
+            /* Now, img properties are about the image itself */
+            display: block; /* Make it a block element to respect margin: auto for centering */
+            max-width: 100%; /* Image will scale down if container is smaller */
+            height: auto; /* Maintain aspect ratio */
             border: 2px solid #ccc; /* Optional: Add a border for better visibility */
+            /* Removed flex properties from img */
         }
     </style>
 </head>
